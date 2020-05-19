@@ -28,9 +28,18 @@ const App = () => {
   return (
     <div>
       <SavedList list={savedList} />
-      <div>Replace this Div with your Routes</div>
+      <Switch>
+        <Route path={`${path}/description`}>
+          <ItemDescription description={item.description} />
+        </Route>
+
+        <Route path={`${path}/shipping`}>
+          <ItemShipping shipping={item.shipping} />
+        </Route>
+      </Switch>
     </div>
   );
 };
 
 export default App;
+
