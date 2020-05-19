@@ -37,6 +37,7 @@ const App = () => {
 
   return (
     <div>
+      <SavedList list={savedList} />
       <Switch>
 
         
